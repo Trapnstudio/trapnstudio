@@ -2,10 +2,24 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
+import { useEffect } from 'react';
+import { Howl, Howler } from 'howler';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  useEffect(() => {
+    const sound = new Howl({
+      src: ['vibe.mp3'],
+      autoplay: true,
+      loop: true,
+      volume: 0.33,
+      preload: true,
+    });
+    return () => {
+      sound.stop();
+    };
+  }, []);
   return (
     <>
       <Head>
