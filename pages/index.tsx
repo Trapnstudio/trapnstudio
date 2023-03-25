@@ -2,24 +2,33 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Howl, Howler } from 'howler';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export default function Home() {
-  useEffect(() => {
+  const [audio, setAudio] = useState<Howl | undefined>(undefined);
+
+  const play = () => {
+    if (audio) {
+      audio.stop();
+    }
     const sound = new Howl({
       src: ['vibe.mp3'],
       autoplay: true,
       loop: true,
-      volume: 0.33,
+      volume: 0.25,
       preload: true,
     });
+    sound.seek(6);
+    setAudio(sound);
+  };
+
+  useEffect(() => {
     return () => {
-      sound.stop();
+      audio?.stop();
     };
-  }, []);
+  }, [audio]);
+
   return (
     <>
       <Head>
@@ -32,7 +41,7 @@ export default function Home() {
         <h1>TRAPNSTUDIO</h1>
 
         <p>
-          TRAPNSTUDIO™ (® soon) is a tech studio that is working on improving
+          TRAPNSTUDIO™ (® soon) is a tech studio that is working on enhancing
           the way humans experience music with the use of tech.
         </p>
 
@@ -57,6 +66,8 @@ export default function Home() {
             </a>
           </li>
         </ul>
+
+        <button onClick={play}>🔊 ENHANCE</button>
       </main>
     </>
   );

@@ -45,3 +45,13 @@ a:active {
   color: inherit;
   border: 1px solid currentColor;
 }
+
+/* Button that is transparent that has a white white border */
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  border: 1px solid white;
+  align-self: center;
+  padding: 0.5rem;
+}
