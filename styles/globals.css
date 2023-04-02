@@ -19,7 +19,7 @@ main {
   flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
 }
 
