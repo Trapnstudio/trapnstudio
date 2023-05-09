@@ -49,24 +49,40 @@ export default function Home() {
           humans experience music with the use of tech.
         </p>
 
-        <h2>Current Work</h2>
+        <h2>Work</h2>
         <ul>
+          <li>
+            <a href="https://thegiftapp.org" target="_blank">
+              The Gift App
+            </a>
+          </li>
           <li>
             <a href="https://dev-kube.trapnstudio.net" target="_blank">
               Vibecue
             </a>
           </li>
           <li>
-            <a href="https://www.sortspotifyplaylists.com" target="_blank">
+            <a href="https://sortspotifyplaylists.com" target="_blank">
               Playsorter
             </a>
           </li>
-        </ul>
-        <h2>Past work</h2>
-        <ul>
+          <li>
+            <a href="https://drilllatino.net" target="_blank">
+              Drill Latino Net
+            </a>
+          </li>
           <li>
             <a href="https://trapcorridosboard.com" target="_blank">
               Trap y Corridos Soundboard
+            </a>
+          </li>
+        </ul>
+
+        <h2>Team</h2>
+        <ul>
+          <li>
+            <a href="https://memije.io" target="_blank">
+              Founder - Christian Memije
             </a>
           </li>
         </ul>
