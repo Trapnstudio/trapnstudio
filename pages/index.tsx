@@ -87,6 +87,15 @@ export default function Home() {
           </li>
         </ul>
 
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="https://linkedin.com/company/trapnstudio" target="_blank">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+
         <button onClick={play}>🔊 ENHANCE</button>
       </main>
     </>
