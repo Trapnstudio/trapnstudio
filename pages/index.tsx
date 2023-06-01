@@ -90,6 +90,11 @@ export default function Home() {
         <h2>Links</h2>
         <ul>
           <li>
+            <a href="https://github.com/Trapnstudio" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
             <a href="https://linkedin.com/company/trapnstudio" target="_blank">
               LinkedIn
             </a>
