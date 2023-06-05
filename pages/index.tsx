@@ -36,7 +36,7 @@ export default function Home() {
         <meta
           name="description"
           content="TRAPNSTUDIO™ is a tech studio that is working on enhancing
-          the way humans experience music with the use of tech"
+          the way humans experience the world with the use of tech"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -46,11 +46,16 @@ export default function Home() {
 
         <p>
           TRAPNSTUDIO™ is a tech studio that is working on enhancing the way
-          humans experience music with the use of tech.
+          humans experience the world with the use of tech.
         </p>
 
         <h2>Work</h2>
         <ul>
+          <li>
+            <a href="https://mindfulgram.app" target="_blank">
+              Mindfulgram
+            </a>
+          </li>
           <li>
             <a href="https://thegiftapp.org" target="_blank">
               The Gift App
@@ -82,7 +87,12 @@ export default function Home() {
         <ul>
           <li>
             <a href="https://memije.io" target="_blank">
-              Founder - Christian Memije
+              Christian
+            </a>
+          </li>
+          <li>
+            <a href="carlosmemije.github.io/carlosmemije" target="_blank">
+              Carlos
             </a>
           </li>
         </ul>
