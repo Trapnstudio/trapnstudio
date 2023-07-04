@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
 import { useEffect, useState } from 'react';
-import { Howl, Howler } from 'howler';
+import { Howl } from 'howler';
 
 export default function Home() {
   const [audio, setAudio] = useState<Howl | undefined>(undefined);
@@ -43,13 +40,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <h1>TRAPNSTUDIO</h1>
 
         <p>
           TRAPNSTUDIO™ is a tech studio that is working on enhancing the way
           humans experience the world with the use of tech.
         </p>
+
+        <h2>Our 3 pillars</h2>
+        <ol>
+          <li>Health</li>
+          <li>Tech</li>
+          <li>Music</li>
+        </ol>
 
         <h2>Work</h2>
         <ul>
