@@ -6,7 +6,7 @@ body {
   font-family: 'MuseoModerno', monospace;
   background-color: black;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
@@ -17,7 +17,7 @@ main {
   /* center within using flex with max-width 320px*/
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  max-width: 500px;
   margin: 0 auto;
   min-height: 100vh;
   justify-content: center;
@@ -29,6 +29,9 @@ ul {
   padding: 0;
 }
 
+li {
+  margin: 1em 0;
+}
 /*
 Anchors are:
 - underlined
