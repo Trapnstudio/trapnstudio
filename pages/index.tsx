@@ -127,7 +127,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <button onClick={play}>🔊 ENHANCE</button>
+        <button onClick={play}>{audio ? '🔇 De-enhance' : '🔊 Enhance'}</button>
       </main>
     </>
   );
